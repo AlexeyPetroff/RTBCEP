@@ -60,7 +60,7 @@ public class CEPMonitoring {
             public boolean filter(Event value) throws Exception {
                 return value.getType().equals("impression");
             }
-        }).times(100).notFollowedBy("clicked").where(new SimpleCondition<Event>() {
+        }).times(1000).notFollowedBy("clicked").where(new SimpleCondition<Event>() {
             @Override
             public boolean filter(Event value) throws Exception {
                 return value.getType().equals("click");
