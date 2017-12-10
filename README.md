@@ -34,7 +34,6 @@ Run Kafka producer:
 
 ```
 ./producer/icu.py CEP
-
 ```
 
 The result will be stored in `/CEPRTB/` or in any folder given in `out` parameter
